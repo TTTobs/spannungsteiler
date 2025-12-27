@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1766293673 source:c:\users\ttt-frame\desktop\projekt\spannungsteiler\functions.c
+	<stdlib.h>
+	<math.h>
+	"functions.h"
+
+1766295199 source:c:\users\ttt-frame\desktop\projekt\spannungsteiler\main.c
+	<stdio.h>
+	<stdlib.h>
+	"functions.h"
+
+1766081063 c:\users\ttt-frame\desktop\projekt\spannungsteiler\functions.c
+
+1766293875 c:\users\ttt-frame\desktop\projekt\spannungsteiler\functions.h
+
+1766487357 source:c:\users\todbo\desktop\projekt\spannungsteiler_v2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"functions.h"
+
+1766487343 c:\users\todbo\desktop\projekt\spannungsteiler_v2\functions.h
+
+1766651666 source:c:\users\todbo\desktop\projekt\spannungsteiler_v2\functions.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	"functions.h"
+
