@@ -7,11 +7,11 @@ struct combination {
     float error;
 };
 
-int calculation_fun(float Uin, float Uout,int selection, struct combination error[], int E_COUNT, int possible_R);
+int calculation_fun(float, float ,int , struct combination error[], int , int );
 
-void sortieren(struct combination arr_to_sort[],int anzahl);
+void sortieren(struct combination arr_to_sort[],int);
 
-void user_input(float* add_Uout, float* add_Uin, int* add_selection);
+void user_input(float* , float* , int* );
 
 void guo(struct combination results[], int , float, float);
 
