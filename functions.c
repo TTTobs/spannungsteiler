@@ -111,7 +111,7 @@ void sortieren(struct combination arr_to_sort[],int anzahl)
 }
 
 
-void user_input(float* add_Uout, float* add_Uin, int* add_selection)
+void user_input(float *add_Uout, float *add_Uin, int *add_selection)
 {
     while(true)
     {
@@ -162,8 +162,23 @@ void guo(struct combination results[], int count, float Uin, float Uout)
     printf("\n");
     for (int i = 0; i < 5; i++)
     {
-        printf("%d: R1=%7.0f k  R2=%7.0f k Error=%6.3f%%\n",
-               i+1,results[i].R1/1000,results[i].R2/1000,results[i].error);
+        if(results[i].R1 < 1000)
+        {
+            printf("%d: R1=%7.0f ",i+1,results[i].R1);
+        }
+        else
+        {
+            printf("%d: R1=%7.0f k ",i+1,results[i].R1/1000);
+        }
+        if(results[i].R2 < 1000)
+        {
+            printf("R2=%7.0f ",results[i].R2);
+        }
+        else
+        {
+            printf("R2=%7.0f k ",results[i].R2/1000);
+        }
+        printf("Error=%6.3f%%\n",results[i].error);
     }
 
     line('=',50);
@@ -182,8 +197,14 @@ void guo(struct combination results[], int count, float Uin, float Uout)
     printf("\n");
     printf("%0.1f V",Uin);
     printf("\t\t");
-    //line(32,4);
-    printf("%0.1f k",results[0].R1/1000);
+    if(results[0].R1 < 1000)
+    {
+        printf("%0.1f",results[0].R1);
+    }
+    else
+    {
+        printf("%0.1f k",results[0].R1/1000);
+    }
     line(32,1);
     printf("%c",179);
     line(32,4);
@@ -192,7 +213,16 @@ void guo(struct combination results[], int count, float Uin, float Uout)
     printf("%c%c%c\n",218,193,191);
     line(32,22);
     printf("%c%c%c",179,32,179);
-    printf("%0.1f k\n",results[0].R2/1000);
+    if(results[0].R2 < 1000)
+    {
+        printf("%0.1f\n",results[0].R2);
+    }
+
+    else
+    {
+        printf("%0.1f k\n",results[0].R2/1000);
+    }
+
     line(32,22);
     printf("%c%c%c\n",192,194,217);
     line(32,23);
